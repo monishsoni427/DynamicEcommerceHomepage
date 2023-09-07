@@ -92,7 +92,7 @@ for (let i = 0; i < products.length; i++) {
 
                       <div class="text-muted mb-3">34 reviews</div>
 
-                      <button type="button" class="btn bg-cart"><i class="fa fa-cart-plus mr-2"></i> Add to
+                      <button type="button" class="btn bg-cart btn-primary"><i class="fa fa-cart-plus mr-2"></i> Add to
                           cart</button>
                   </div>
               </div>
@@ -101,6 +101,7 @@ for (let i = 0; i < products.length; i++) {
 }
 //search function here12
 const serch = () => {
+
   let servalue = document.getElementById("serValue").value;
   let serchProducts = products.filter((item) => {
     return (
@@ -154,7 +155,7 @@ const serch = () => {
 
                       <div class="text-muted mb-3">34 reviews</div>
 
-                      <button type="button" class="btn bg-cart"><i class="fa fa-cart-plus mr-2"></i> Add to
+                      <button type="button" class="btn bg-cart btn-primary"><i class="fa fa-cart-plus mr-2"></i> Add to
                           cart</button>
                   </div>
               </div>
@@ -166,13 +167,6 @@ const serch = () => {
   }
 };
 
-// prevent default use for keypress 
-document.getElementById("serValue").onkeyup = function(e){
-    if(e.key === "Enter"){
-      e.preventDefault();
-      serch();
-    }
-}
 
 
 
