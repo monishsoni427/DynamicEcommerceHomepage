@@ -101,11 +101,12 @@ for (let i = 0; i < products.length; i++) {
 }
 
 // prevent default use for keypress 
-document.getElementById("serValue").addEventListener("onkeydown",(e)=>{
-  e.preventDefault();
-  serch();
-})
-
+document.getElementById("serValue").onkeyup = function(e){
+    if(e.key === "Enter"){
+      e.preventDefault();
+      serch();
+    }
+}
 
 
 
