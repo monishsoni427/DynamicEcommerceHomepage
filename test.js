@@ -99,18 +99,6 @@ for (let i = 0; i < products.length; i++) {
           </div>
       `;
 }
-
-// prevent default use for keypress 
-document.getElementById("serValue").onkeyup = function(e){
-    if(e.key === "Enter"){
-      e.preventDefault();
-      serch();
-    }
-}
-
-
-
-
 //search function here12
 const serch = () => {
   let servalue = document.getElementById("serValue").value;
@@ -177,3 +165,15 @@ const serch = () => {
     div2.innerHTML = "";
   }
 };
+
+// prevent default use for keypress 
+document.getElementById("serValue").onkeyup = function(e){
+    if(e.key === "Enter"){
+      e.preventDefault();
+      serch();
+    }
+}
+
+
+
+
