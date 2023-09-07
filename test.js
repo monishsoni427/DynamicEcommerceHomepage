@@ -110,7 +110,7 @@ document.getElementById("serValue").addEventListener("onkeydown",(e)=>{
 
 
 
-//search function here
+//search function here12
 const serch = () => {
   let servalue = document.getElementById("serValue").value;
   let serchProducts = products.filter((item) => {
