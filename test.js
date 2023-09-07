@@ -100,7 +100,8 @@ for (let i = 0; i < products.length; i++) {
       `;
 }
 
-const serch = () => {
+const serch = (e) => {
+ 
   let servalue = document.getElementById("serValue").value;
   let serchProducts = products.filter((item) => {
     return (
