@@ -101,7 +101,7 @@ for (let i = 0; i < products.length; i++) {
 }
 
 // prevent default use for keypress 
-document.getElementById("serValue").addEventListener("onkeypress",(e)=>{
+document.getElementById("serValue").addEventListener("onkeydown",(e)=>{
   e.preventDefault();
   serch();
 })
@@ -120,6 +120,12 @@ const serch = () => {
       item.category.toLowerCase().includes(servalue.toLowerCase())
     );
   });
+
+  if(serchProducts.length===0){
+    div2.innerHTML = `
+    <div class = "text-center"><h6>Sorry No Products Found in today's special deal</h6></div>`;
+    return;
+  }
 
   div2.innerHTML = "";
   for (let i = 0; i < serchProducts.length; i++) {
