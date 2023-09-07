@@ -99,6 +99,17 @@ for (let i = 0; i < products.length; i++) {
           </div>
       `;
 }
+
+// prevent default use for keypress 
+document.getElementById("serValue").addEventListener("onkeypress",(e)=>{
+  e.preventDefault();
+  serch();
+})
+
+
+
+
+
 //search function here
 const serch = () => {
   let servalue = document.getElementById("serValue").value;
