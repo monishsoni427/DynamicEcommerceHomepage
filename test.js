@@ -99,7 +99,7 @@ for (let i = 0; i < products.length; i++) {
           </div>
       `;
 }
-
+//search function here
 const serch = () => {
   let servalue = document.getElementById("serValue").value;
   let serchProducts = products.filter((item) => {
